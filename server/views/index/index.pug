@@ -1,0 +1,32 @@
+extends ../layout/index
+block slider
+    .slider
+        h1 Rio de Janeiro
+        em Aventura
+
+
+block contenido
+    main.container.mt-5
+        h2.text-center.mb-5 Sobre Nosotros
+        .row.mb-5
+            .col-md-6
+                p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique autem incidunt excepturi dolorem nisi. Minus eos illo obcaecati ipsa rerum perspiciatis vero aliquid nam rem reiciendis, iusto necessitatibus quisquam voluptatem?
+                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, inventore reiciendis eligendi libero corrupti laboriosam praesentium sapiente quis accusamus, ex officia neque cum aliquam fugit eum dignissimos facilis autem vero.
+            .col-md-6
+                img(src="/img/inicio_nosotros.jpg", class="img-fluid")
+        h2.text-center.mb-5 Proximos Viajes
+        include ../layout/partials/viajes
+
+    .descuento
+        .container
+            .row
+                .col-md-6
+                    .contenido
+                        h3 5% de Descuento
+                        p.titulo Viaje a Canada
+                        p.fecha 20 de Enero 2020 - 30 de Enero de 2020
+                        p.precio $600 URS
+    
+    .container
+        h2.text-center.my-5 Comentarios
+        include ../layout/partials/testimoniales

@@ -1,0 +1,19 @@
+// Master page, lo que va en todas las paginas
+
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title #{titulo} | #{pagina}
+        link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css')
+        link(rel="stylesheet", href="/css/style.css")
+        link(href='https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Open+Sans:wght@400;700&family=Staatliches&display=swap', rel='stylesheet')
+        script(src='https://kit.fontawesome.com/f2cdc0d26b.js', crossorigin='anonymous')
+    body(class=clase)
+        include includes/header
+        block slider
+        block  contenido
+        include includes/footer    
+        
+
